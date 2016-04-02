@@ -1,0 +1,18 @@
+
+<!-- Closed jobs in student part of website -->
+<div class="container container-body">
+	<center><h2>Jobs Closed</h2></center>
+	<div class="pull-right">
+		<label class="col-sm-4" >Search: <span class="glyphicon glyphicon-search"></span></label>		
+		<input class="col-sm-6" type="text" id="search" placeholder="Search "  aria-label="search input field" ng-model="search_closed">
+	</div>
+</div>
+<div class="panel panel-info" ng-repeat="job in closedjobs | filter:search_closed" >
+	<div class="panel-heading" aria-label="Microsoft"><h4>{{job.cname}}</h4></div>
+	<div class="panel-body">
+		<h3 class="pull-left" id="job-date">{{job.date}}</h3> <h3 class="pull-middle" id="job-title">{{job.position}}</h3>
+		<div class="pull-right">
+			<button type="button" class="btn btn-primary"><a href ng-click="viewClosed(job)" >View Job</button></a>
+		</div>
+	</div>
+</div>

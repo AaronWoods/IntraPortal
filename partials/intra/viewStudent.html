@@ -1,0 +1,72 @@
+<!--view student profile-->
+<div class="container container-body">
+	<center><h2>Viewing {{data.name}}'s Profile</h2></center>
+	<form class="form-horizontal" role="form" >
+		<div class="form-group">
+			<label class="control-label col-sm-2" >Username:</label>
+			<div class="col-sm-8">
+			  <input type="text" class="form-control" id="name" placeholder="Name" aria-label="Name input field" ng-model="data.dcuuser" readonly>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" >Name:</label>
+			<div class="col-sm-8">
+			  <input type="text" class="form-control" id="name" placeholder="Name" aria-label="Name input field" ng-model="data.name" readonly>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" >Address:</label>
+			<div class="col-sm-8">          
+			  <input type="text" class="form-control" id="address" placeholder="Address"  aria-label="Address input field" ng-model="data.address" readonly>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" >Email:</label>
+			<div class="col-sm-8">          
+			  <input type="text" class="form-control" id="email"  placeholder="Email"  aria-label="Email input field" ng-model="data.email" readonly>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" >D.O.B:</label>
+			<div class="col-sm-8">          
+			  <input type="date" class="form-control" id="dob" placeholder="Date Of Birth"  aria-label="Date of birth input field" ng-model="data.dob" readonly>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" >Degree:</label>
+			<div class="col-sm-8">          
+			  <input type="text" class="form-control" id="degree" placeholder="Degree"  aria-label="Degree input field" ng-model="data.degree" readonly> 
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" >Phone:</label>
+			<div class="col-sm-8">          
+				<input type="text" class="form-control" id="phoneNum" placeholder="Phone Number" aria-label="Phone number input field" ng-model="data.phone" readonly>
+			</div>
+		</div>
+	</form>
+ </div>
+
+  <div class="container">
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label class="control-label col-sm-2" >Profile Bio:</label>
+          <div class="col-sm-8">
+            <textarea type="text" class="form-control" rows="5" id="profile_bio" placeholder="Profile Bio" ng-model="data.profilebio" readonly ></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" >Projects & Interests:</label>
+          <div class="col-sm-8">          
+            <textarea type="text" class="form-control" rows="5" id="projects_interests" placeholder="Projects & Interests" ng-model="data.projectinterests" readonly></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" >Preferences:</label>
+          <div class="col-sm-8">          
+            <textarea type="text" class="form-control" rows="5" id="preferences" placeholder="Preferences" ng-model="data.preferences" readonly></textarea>
+          </div>
+        </div>
+      </form>
+  </div>
+  <br />

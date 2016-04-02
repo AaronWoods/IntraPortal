@@ -1,0 +1,63 @@
+
+<!-- Intra Home - this looks after the loading of the intra admin pages of the system -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+        <!-- button to collapse header -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- sitelogo -->
+          <div class="pull-left">
+            <img src="https://loop.dcu.ie/theme/image.php/dcu/theme/1422551550/logo" class="sitelogo">
+          </div>
+          <!-- site name .e.g intra portal -->
+          <a class="navbar-brand" href>Intra Portal</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div class="nav navbar-nav navbar-right">
+            <ul class="nav nav-pills">
+              <li ng-class="{'active':checkTab(1)}"><a href ng-click="tab=1" aria-label="intra homepage tab">Home</a></li>       
+              <li ng-class="{'active':checkTab(2)}" >
+                <a href ng-click="tab=2" class="dropdown-toggle" data-toggle="dropdown" aria-label="intra services dropdown">Services <b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="User options dropdown">
+                  <li ng-class="{'active':checkTab(6)}"><a href ng-click="tab=6">Add Student</a></li>  
+                  <li ng-class="{'active':checkTab(7)}"><a href ng-click="tab=7">Add Company</a></li>
+                </ul>
+              </li>
+			  <li ng-class="{'active':checkTab(13)}"><a href ng-click="tab=13" aria-label="Students list">Students</a></li> 
+			  <li ng-class="{'active':checkTab(14)}"><a href ng-click="tab=14" aria-label="Companies list">Companies</a></li>
+              <li class="dropdown">
+                <a href class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">{{intrauser}}<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://www4.dcu.ie/timetables/ac-14-15.shtml">Calender</a></li>
+                  <li><a href ng-click="logout()">Log out</a></li>
+                </ul>
+              </li>            
+              <li role="presentation">
+                  <button type="button" class="btn btn-default" ng-click="logout()" aria-label="Logout Button">
+                    <span class="glyphicon glyphicon-off"></span>
+                  </button>
+              </li>
+          </ul>
+         </div>
+        </div><!--/.nav-collapse -->
+      </div><!-- end of container div -->
+    </div> <!-- end of navbar div -->
+
+
+<intra-Homepage ng-show="tab==1"></intra-Homepage> <!--home -->
+<intra-services ng-show="tab==2"></intra-services>
+<add-Student ng-show="tab==6"></add-Student> <!-- add student -->
+<add-Company ng-show="tab==7"></add-Company> <!-- add company -->
+<modify-company ng-show="tab==8"></modify-company> <!-- modify students-->
+<modify-student ng-show="tab==9"></modify-student> <!-- modify company -->
+<student-Data ng-show="tab==11"></student-Data> <!-- empty -->
+<company-Data ng-show="tab==12"></company-Data> <!-- empty -->
+<view-students ng-show="tab==13""></view-students>
+<view-companies ng-show="tab==14"></view-companies>
+<view-student ng-show="tab==15"></view-student>
+<view-company ng-show="tab==16"></view-company>

@@ -1,0 +1,73 @@
+
+
+<!-- view company profile -->
+ <div class="container container-body">
+	<h2><center>{{companydata.cname}}'s Profile</center></h2>
+	<form class="form-horizontal" role="form" >
+		<div class="form-group">
+			<label class="control-label col-sm-2" >Name:</label>
+			<div class="col-sm-8">
+			  <input type="text" class="form-control" id="cuser" placeholder="Company Username" aria-label="company Username" ng-model="companydata.cuser" readonly><span class="error"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" >Name:</label>
+			<div class="col-sm-8">
+			  <input type="text" class="form-control" id="cname" placeholder="Company Name" aria-label="company Name input" ng-model="companydata.cname" readonly><span class="error"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" >Address:</label>
+			<div class="col-sm-8">          
+			  <input type="text" class="form-control" id="address" placeholder="Company Address"  aria-label=" company address input field" ng-model="companydata.caddress" readonly><span class="error"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" >Email:</label>
+			<div class="col-sm-8">          
+			  <input type="text" class="form-control" id="email"  placeholder="Company Contact Email"  aria-label="company contact email input field" ng-model="companydata.cmail" readonly><span class="error"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" >Website:</label>
+			<div class="col-sm-8">          
+				<input type="URL" class="form-control" id="website" placeholder="Company Website" aria-label="company website input field" ng-model="companydata.cwebsite" readonly><span class="error"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" >Contact Name:</label>
+			<div class="col-sm-8">          
+			  <input type="text" class="form-control" id="contact" placeholder="Company Contact"  aria-label="company contact input field" ng-model="companydata.contactname" readonly><span class="error"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" >Contact Position:</label>
+			<div class="col-sm-8">          
+			  <input type="text" class="form-control" id="position" placeholder="Contact's Position"  aria-label="contact's position input field" ng-model="companydata.contactposition" readonly><span class="error"></span>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" >Phone:</label>
+			<div class="col-sm-8">          
+				<input type="text" class="form-control" id="phoneNum" placeholder="Phone Number" aria-label="Phone number input field" ng-model="companydata.cphone" readonly><span class="error"></span>
+			</div>
+		</div>
+	</form>
+ </div>
+
+<div class="container container-profile">
+    <form class="form-horizontal">
+        <div class="form-group">
+	      <label class="control-label col-sm-2" >Company Description:</label>
+          <div class="col-sm-8">
+			<textarea name="aboutCompany" class="form-control" id="aboutCompany"  placeholder="About Company" aria-label="about company input field" ng-model="companydata.cdesc" readonly></textarea>
+          </div>
+        </div>
+    </form>
+ </div>
+
+
+
+
+
+

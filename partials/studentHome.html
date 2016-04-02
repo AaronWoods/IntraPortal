@@ -1,0 +1,62 @@
+
+<!-- Student Home - this looks after the loading of the student pages of the system -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+        <!-- button to collapse header -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- sitelogo -->
+          <div class="pull-left">
+            <img src="https://loop.dcu.ie/theme/image.php/dcu/theme/1422551550/logo" class="sitelogo">
+          </div>
+          <!-- site name .e.g intra portal -->
+          <a class="navbar-brand" href ng-click="tab=1">Intra Portal</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div class="nav navbar-nav navbar-right">
+            <ul class="nav nav-pills">
+			  <li ng-class="{'active':checkTab(7)}"><a href ng-click="tabchange(7)" aria-label="Interviews tab">Interviews</a></li>
+              <li ng-class="{'active':checkTab(1)}" ng-hide="data.hired=='yes'"><a href aria-label="student profile tab" ng-click="tabchange(1)">Profile</a></li>       
+              <li ng-class="{'active':checkTab(2)}" ng-hide="data.hired=='yes'"><a href ng-click="tabchange(2)" aria-label="student results tab">Results</a></li>
+              <li ng-class="{'active':checkTab(3)}" ng-hide="data.hired=='yes'"><a href ng-click="tabchange(3)" aria-label="student jobs available tab">Jobs Available</a></li>
+              <li ng-class="{'active':checkTab(4)}" ng-hide="data.hired=='yes'"><a href ng-click="tabchange(4)" aria-label="student jobs closed tab">Jobs Closed</a></li>
+              <li ng-class="{'active':checkTab(5)}"><a href ng-click="tabchange(5)" aria-label="student testimonials tab">Job Testimonials</a></li>
+			  
+              <li class="dropdown">
+                <a href class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">{{username}}<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li ng-hide="data.hired=='yes'"><a href ng-click="tab=6">Edit Profile</a></li>
+                  <li><a href="https://www4.dcu.ie/timetables/ac-15-16.shtml">Calender</a></li>
+                  <li><a href="https://loop.dcu.ie/message/index.php">Messages</a></li>
+                  <li><a href ng-click="logout()" >Log out</a></li>
+                </ul>
+              </li>            
+              <li role="presentation">
+                  <button type="button" class="btn btn-default" aria-label="Logout Button" ng-click="logout()">
+                    <span class="glyphicon glyphicon-off"></span>
+                  </button>
+              </li>
+          </ul>
+         </div>
+        </div><!--/.nav-collapse -->
+      </div><!-- end of container div -->
+    </div> <!-- end of navbar div -->
+ 
+
+<student-Profile ng-show="tab==1"></student-Profile>
+<cv ng-show="tab==2"></cv>
+<available-Jobs ng-show="tab==3"></available-Jobs>
+<closed-Jobs ng-show="tab==4"></closed-Jobs>
+<testimonials ng-show="tab==5"></testimonials>
+<edit-Profile ng-show="tab==6"></edit-Profile>
+<student-interviews ng-show="tab==7"></student-interviews>
+<view-job ng-show="tab==8"></view-job>
+<review-submit ng-show="tab==9"></review-submit>
+<view-review ng-show="tab==10"></view-review>
+<company-profile ng-show="tab==11"></company-profile>
+<view-closed ng-show="tab==12"></view-closed>

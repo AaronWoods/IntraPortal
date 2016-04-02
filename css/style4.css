@@ -1,0 +1,315 @@
+/* CSS Document */
+
+.navbar-default {
+	background-color: #2B4479;
+	width: 100%;
+	height: 40px;
+}
+
+.navbar-defualt .navbar-right > ul > li > a {
+	color: #FFFFFF;
+}
+
+.navbar-inverse {
+	background-color: #2B4479;
+	width: 90%;
+	height: 90px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar-fixed-bottom {
+	background-color: #FFFFFF;
+	width: 90%;
+	height: 130px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar-default .navbar-brand {
+	color: #FFFFFF;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	color: #D3D3D3;
+}
+
+
+#brand {
+	margin-top: 20px;
+	margin-right: 20px;
+	color: #F3F3F3;
+}
+
+.navbar-fixed-top, {
+  position: relative;
+}
+
+.navbar-toggle {
+	color: #2B4479;
+	
+}
+
+.icon-bar {
+  background-color: white;
+}
+
+.nav-pills {
+	color: #FFFFFF;
+	margin-top: 5px;
+
+}
+
+body {
+	background-color: #FFFFFF;
+}
+
+.logo {
+	float: left;
+	margin-left: 10px;
+	padding-top: 0px;
+
+}
+
+.sitelogo {
+	margin-top: 5px;
+	margin-right: 20px;
+}
+
+.img-thumbnail{
+	width: 150px;
+	height: 150px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	display: inline-block;
+	position: absolute;
+
+}
+
+.table-bordered {
+	margin-left: 250px;
+	margin-top: 60px;
+}
+
+.table-jobs {
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.container-body {
+	margin-top: 150px;
+
+}
+
+.container-compPro {
+	margin-top: 100px;
+}
+
+.form-group {
+	list-style-type: none;
+	margin-top: 50px;
+	margin-left: 150px;
+
+}
+
+.btn-default {
+	margin-right: 20px;
+
+}
+
+.btn-primary {
+	position: relative;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+.btn-primary > a {
+	color: #FFFFFF;
+}
+.btn-success {
+	display: inline-block;
+	margin-left: 50px; 
+	position: absolute;
+
+}
+
+.btn-warning {
+	height: 53px;
+	margin-left: 435px;
+	display: inline-block;
+	position: absolute;
+}
+
+.btn-danger {
+	height: 53px;
+	margin-left: 585px;
+	display: inline-block;
+	position: absolute;
+}
+
+.start {
+	height: 53px;
+	margin-left: 305px;
+	display: inline-block;
+	position: absolute;
+}
+
+.logout {
+	margin-right: 30px;
+}
+
+.col-sm-4 {
+	display: inline-block;
+}
+
+.col-sm-10 {
+	margin-right: 10px;
+
+}
+
+.col-md-3 {
+	display: inline-block;
+
+}
+
+.col-lg-6 {
+	display: inline-block;
+
+}
+
+.col-lg-12 {
+	margin-top: 50px;
+	
+}
+
+.well-md-10 {
+	background-color: #D3D3D3;
+
+}
+
+.row {
+	margin-top: 20px;
+	list-style-type: none;
+	position: relative;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.company-info {
+	list-style-type: none;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 110px;
+	text-align: left;
+	width: 80%;
+	position: relative;
+}
+
+.companyHeading {
+	text-align: left;
+	margin-top: 80px;
+	margin-left: 200px;
+	list-style-type: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	display: inline-block;
+	margin: auto;
+}
+
+h1,h3 {
+	text-align: center;
+	display: inline;
+}
+
+.panel-group {
+	width: 50%;
+	margin-left: 250px;
+	margin-top: 150px;
+	background: transparent;
+	font: 1em;
+}
+
+.panel-primary {
+	height: 200px;
+	width: 40%;
+	margin-top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	font: 1em;
+
+}
+
+.panel-success {
+	height: 240px;
+	margin-top: 30px;
+	text-align: left;
+	font: 1em;
+}
+
+.panel-info {
+	text-align: center;
+	height: 180px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	font: 1em;
+
+}
+
+.interview-info {
+	margin-top: 25px;
+
+}
+
+#location {
+	margin-right: 62.5px;
+}
+
+.fileinput-button {
+	display: inline-block;
+	margin-left: auto;
+}
+
+#job-date {
+	margin-top: 0px;
+}
+
+#profile_bio {
+	height: 200px;
+}
+
+#projects_interests {
+	height: 200px;
+}
+
+#preferences {
+	height: 200px;
+}
+
+#aboutCompany {
+	height:200px;
+}
+
+.form-group.required .control-label:after { 
+   content:"*";
+   color:red;
+}
+
+@media (min-width: 768px) { 
+.navbar-collapse.in{ overflow-y:visible;}
+}
+
+

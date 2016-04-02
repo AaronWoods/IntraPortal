@@ -1,0 +1,56 @@
+
+
+<div class="container-fluid">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="logo">
+				<h1><a href="http://www.dcu.ie"><img src="images/dcu.png" alt="" id="logo"></a></h1>
+			</div> 
+			<div id="brand" class="navbar-brand pull-right">Intra Portal</div>
+		  </div>
+	  </nav>
+  </div>
+  <div class="container">
+	<form name="form1">
+		<div class="panel panel-primary">
+			  <div class="panel-heading">
+				  <h3 class="panel-title" aria-label="User login">Welcome, {{user.name}}</h3>
+			  </div>
+			  <div class="panel-body">
+				  <ul>
+					  <li><input type="text" class="form-control" placeholder="Username" aria-label="Username input field" ng-model="user.name" required></li>
+					  <li><input type="password" class="form-control" placeholder="Password" aria-label="Password input field" ng-model="user.pass" required></li> 
+					  <br />
+					  <li class="pull-right"><button type="submit" ng-click="login(user)" class="btn btn-primary login" ng-disabled="form1.$invalid">{{loginmsg}}</button></li>
+				  </ul>
+			  </div>
+		</div>
+	</form>
+  </div>
+  
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+  		<ul class="nav nav-pills">
+        <li role="presentation" aria-label="Student email"><a href="http://login.mail.dcu.ie">Student Email</a></li>
+  			<li role="presentation" aria-label="Portal"><a href="http://www.dcu.ie/portal">Portal</a></li>
+  			<li role="presentation" aria-label="Disclaimer"><a href="http://www.dcu.ie/info/legal.shtml">Disclaimer</a></li>
+  			<li role="presentation" aria-label="Staff email"><a href="http://www.dcu.ie/mail/main/">Staff Email</a></li>
+        <ul class="nav nav-pills">
+          <li role="presentation">
+            <a href="www.facebook.com/DCU"><img src="images/facebook.jpg" aria-label="DCU Facebook"></a>
+          </li>
+          <li><a href="https://twitter.com/dublincityuni/"><img src="images/twitter.jpg" aria-label="DCU Twitter"></a></li>
+          <li><a href="http://www.youtube.com/user/DublinCityUniversity"><img src="images/yt.jpg" aria-label="DCU Youtube"></a></li>
+          <li><a href="http://www.pinterest.com/source/dcu.ie/"><img src="images/pinterest.jpg" aria-label="DCU Pinterest"></a></li>
+         <li><a href="http://www.thehelix.ie/" aria-label="The helix"><img src="http://www.dcu.ie/sites/all/themes/dcu_responsive/images/the-helix.png"></a></li>
+         <li><a href="http://www.ndp.ie/" aria-label="ndp"><img src="http://www.dcu.ie/sites/all/themes/dcu_responsive/images/NDP.png"></a></li>
+         <li><a href="http://www.esf.ie/" aria-label="esf"><img src="http://www.dcu.ie/sites/all/themes/dcu_responsive/images/esf.png"></a></li>
+         
+      </ul>
+    </ul>
+        <ul class="nav nav-pills">
+          <li role="presentation" aria-label="Contact"><a href="http://www.dcu.ie/marketing/contact-us.shtml">Contact</a></li>
+          <li role="presentation" aria-label="Loop"><a href="https://loop.dcu.ie/login/index.php">Loop</a></li>
+          <li role="presentation" aria-label="Privacy"><a href="http://www.dcu.ie/info/regulations/privacy.shtml">Privacy</a></li>
+        </ul>
+    </nav>
+  </div>

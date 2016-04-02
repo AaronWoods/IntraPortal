@@ -1,0 +1,33 @@
+<!-- Jobs Posted by company page -->
+  <div class="container container-body">
+    <div class="col-lg-12">
+    <center><h2> Jobs Posted By {{cname}}</h2></center>
+      <table class="table table-bordered table-jobs">
+        <thead>
+          <tr> 
+			<!-- Table headings -->
+              <th>Job Title</th>
+              <th>Company</th>
+              <th>Location</th>
+              <th>Expiry date</th>
+              <th>Requirements</th>
+              <th>Languages</th>
+              <th>Available</th>
+			  <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="pjob in postedjobs"> <!--ng-repeat - this will show all jobs posted using this template -->
+              <td>{{pjob.position}}</td>
+              <td>{{pjob.cname}}</td>
+              <td>{{pjob.location}}</td>
+              <td>{{pjob.date}}</td>
+              <td>{{pjob.requirements}}</td>
+              <td>{{pjob.languages}}</td>
+              <td>{{pjob.available}}</td>
+			  <td><button ng-click="editJob(pjob)">Edit</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>         
+  </div>

@@ -1,0 +1,22 @@
+		
+<!-- Student testimonials page -->		
+<div class="container container-body">
+	<h2><center>Students Intra Experience</center></h2> 
+</div>
+<div class="container">
+	<button type="button" class="btn btn-primary" ng-click="tab=9">Write Review</button>
+	<div class="pull-right">
+		<label class="col-sm-4" >Search: <span class="glyphicon glyphicon-search"></span></label>		
+		<input class="col-sm-6" type="text" id="search" placeholder="Search "  aria-label="search input field" ng-model="search_reviews">
+	</div>
+</div>
+<div class="panel panel-info" ng-repeat="review in reviews | filter:search_reviews" >
+	<div class="panel-heading" aria-label="Microsoft"><h4>{{review.cname}}</h4></div>
+	<div class="panel-body">
+		<h3 class="pull-left" id="job-date">Author:</h3> <h3 class="pull-middle" id="job-title">{{review.author}}</h3>
+		<div class="pull-right">
+			<button type="button" class="btn btn-primary"><a href ng-click="reviewView(review)" >View Review</button></a>
+		</div>
+	</div>
+</div>
+  

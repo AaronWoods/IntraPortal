@@ -1,0 +1,45 @@
+<!-- Company post jobs page -->
+<form name="form3" class="form-horizontal" role="form" ng-init="company.name=companydata.cname">
+  <div class="container container-body">
+
+    <center><h2>Edit Job</h2></center>
+    
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Location:</label>
+        <div class="col-sm-8">          
+          <input type="text" class="form-control" id="location" placeholder="Location" aria-label="interview location input" ng-model="jobedit.location">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Requirements:</label>
+        <div class="col-sm-8">          
+          <input type="text" class="form-control" id="requirements" placeholder="1.1, 2.1, 2.2 or higher" aria-label="job requirements input" ng-model="jobedit.requirements" required>
+        </div>
+      </div>
+	  <div class="form-group">
+        <label class="control-label col-sm-2" >Languages:</label>
+        <div class="col-sm-8">          
+          <input type="text" class="form-control" id="languages" placeholder="Java, C#.net, C++ ..." aria-label="languages input" ng-model="jobedit.languages" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Job expiry date:</label>
+        <div class="col-sm-8">          
+          <input type="text" class="form-control" placeholder="yyyy-mm-dd" aria-label="interview date input" ng-model="jobedit.date"> 
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Job Description:</label>
+        <div class="col-sm-8">          
+          <textarea type="text" class="form-control" rows="5" id="job_desc" placeholder="Job Description" aria-label="job description input" ng-model="jobedit.jobdesc" required></textarea>
+        </div>
+      </div>
+ 
+		<div class="pull-right">
+          <button type="submit" class="btn btn-primary" ng-disabled="form3.$invalid" ng-click="updateJob()">Update Job</button>
+		</div>
+	
+  </div>
+</form>
+<br />
+

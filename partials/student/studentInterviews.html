@@ -1,0 +1,34 @@
+
+<!-- students interview notification page -->
+<div class="container container-body">
+	<div ng-show="data.hired=='' && interviews.length<1" >
+		<h2><center>Sorry, you have no interview notifications</center></h2> 
+
+	</div>
+</div>
+	
+<div class="container" >	
+	<h1 ng-hide="data.hired=='yes' || interviews.length<1" ><center>Interview notifications</center></h1>
+	<div ng-hide="data.hired=='yes' || interviews.length<1" class="panel panel-info" ng-repeat="interview in interviews" >
+		<div class="panel-heading" aria-label="Microsoft"><h4>{{interview.cname}}</h4></div>
+		<div class="panel-body">
+			<h3 class="pull-left"></h3> <h3 class="pull-middle" id="job-title">{{interview.position}}</h3>
+			<div class="pull-right">
+				<a  ng-hide="interview.confirm=='yes'" href ng-click="confirminterview(interview)"><button type="button" class="btn btn-primary">Confirm</button></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="panel panel-info" ng-show="data.cname==job.cname&&data.position==job.position" ng-repeat="job in closedjobs">
+		<div class="panel-heading" aria-label="Microsoft"><h4>{{job.cname}}</h4></div>
+		<div class="panel-body">
+			<h3 class="pull-left">{{job.date}}</h3> <h3 class="pull-middle" id="job-title">{{job.position}}</h3>
+			<div class="pull-right">
+				<button type="button" class="btn btn-primary"><a href ng-click="viewClosed(job)" >View Job</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- DISPLAY INTERVIEW NOTIFICATIONS -->
+

@@ -1,0 +1,54 @@
+
+<!-- Company Home - this looks after the loading of the company pages of the system -->
+ <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+        <!-- button to collapse header -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- sitelogo -->
+          <div class="pull-left">
+            <img src="https://loop.dcu.ie/theme/image.php/dcu/theme/1422551550/logo" class="sitelogo">
+          </div>
+          <!-- site name .e.g intra portal -->
+          <a class="navbar-brand" href ng-click="tab=1">Intra Portal</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div class="nav navbar-nav navbar-right">
+            <ul class="nav nav-pills">
+              <li ng-class="{'active':checkTab(1)}"><a href ng-click="tab=1" aria-label="company profile tab">Profile</a></li>       
+              <li ng-class="{'active':checkTab(3)}"><a href ng-click="tab=3" aria-label="company post job tab">Post Job</a></li>
+              <li ng-class="{'active':checkTab(4)}"><a href ng-click="tab=4" aria-label="company jobs posted tab">Jobs Posted</a></li>
+              <li ng-class="{'active':checkTab(5)}"><a href ng-click="tab=5" aria-label="company candidates tab">Candidates</a></li>
+              <li class="dropdown">
+                <a href class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">{{username}}<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href ng-click="tab=6">Edit Profile</a></li>
+                  <li><a href="https://www4.dcu.ie/timetables/ac-15-16.shtml">Calender</a></li>
+                  <li><a href ng-click="logout()">Log out</a></li>
+                </ul>
+              </li>            
+              <li role="presentation">
+                  <button type="button" class="btn btn-default"  ng-click="logout()" aria-label="Logout Button">
+                    <span class="glyphicon glyphicon-off"></span>
+                  </button>
+              </li>
+          </ul>
+         </div>
+        </div><!--/.nav-collapse -->
+      </div><!-- end of container div -->
+    </div> <!-- end of navbar div -->
+
+
+<company-Profile ng-show="tab==1"></company-Profile>
+<post-Jobs ng-show="tab==3"></post-Jobs>
+<jobs-posted ng-show="tab==4"></jobs-posted>
+<candidates ng-show="tab==5"></candidates>
+<company-Edit ng-show="tab==6"></company-Edit>
+<edit-Job ng-show="tab==7"></edit-Job>
+<student-Profile ng-show="tab==8"></student-Profile>
+ 

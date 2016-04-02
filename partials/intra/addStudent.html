@@ -1,0 +1,64 @@
+<!-- Add student page -->
+
+  <div class="container container-body">
+    <center><h2>Add Student</h2></center>
+    <form class="form-horizontal" role="form" name="form5">
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Name:</label>
+        <div class="col-sm-8">          
+          <input type="text" class="form-control" id="company" placeholder="Student Name" ng-model="student.name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Address:</label>
+        <div class="col-sm-8">          
+          <input type="text" class="form-control" id="address" placeholder="Address" ng-model="student.address">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Email:</label>
+        <div class="col-sm-8">          
+          <input type="email" class="form-control" id="email" placeholder="vw.xyz12@mail.dcu.ie" ng-model="student.mail">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" >D.O.B</label>
+        <div class="col-sm-8">          
+          <input type="text" class="form-control" id="dob" placeholder="yyyy/mm/dd" ng-model="student.dob">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" >Phone Number:</label>
+        <div class="col-sm-8">          
+          <input type="text" class="form-control" id="phone_num" placeholder="Phone Number" ng-model="student.phone">
+        </div>
+      </div>
+	  <div class="form-group required">
+        <label class="control-label col-sm-2" >Student number:</label>
+        <div class="col-sm-8">          
+          <input type="text" class="form-control" id="id" placeholder="12345653..." ng-model="student.id" required>
+        </div>
+      </div>
+      <div class="form-group required">
+        <label class="control-label col-sm-2" >Degree:</label>
+        <div class="col-sm-8">          
+          <input type="text" class="form-control" id="degree" placeholder="CASE3, EC3, CA1 etc..." ng-model="student.degree" required>
+        </div>
+      </div>
+      <div class="form-group required">
+        <label class="control-label col-sm-2" >Username:</label>
+        <div class="col-sm-8">          
+          <input type="text" class="form-control" id="stu_uname" placeholder="max 10 characters" ng-model="student.username" required>
+        </div>
+      </div>
+      <div class="form-group required">
+        <label class="control-label col-sm-2" >Password:</label>
+        <div class="col-sm-8">          
+          <input type="password" class="form-control" id="password" placeholder="Password" ng-model="student.password" required>
+        </div>
+      </div>
+    <div class="pull-right">
+          <button type="submit" class="btn btn-primary" ng-disabled="form5.$invalid" ng-click="addStudent(student)">Submit</button>
+    </div>
+	</form>
+  </div>
