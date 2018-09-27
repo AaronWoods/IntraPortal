@@ -9,12 +9,12 @@ The current portal is outdated and has a terrible user interface
  - Security improvements
 
 #Technologies
-  -Angular1.2
-  -PHP
-  -mySql
-  -Bootstrap
-  -Html
-  -Css
+  - Angular1.2
+  - PHP
+  - mySql
+  - Bootstrap
+  - Html
+  - Css
   
 #Partner
-  -Ian Dowling
+  - Ian Dowling
